@@ -70,6 +70,9 @@
 }
 % Solves issues Warning: File `cv.out' has changed
 \RequirePackage{bookmark}
+% Package for itemizing horizontally
+\RequirePackage{tasks}
+\RequirePackage{multicol}
 
 %-------------------------------------------------------------------------------
 %                Configuration for directory locations
