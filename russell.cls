@@ -72,7 +72,6 @@
 \RequirePackage{bookmark}
 % Package for itemizing horizontally
 \RequirePackage{tasks}
-\RequirePackage{multicol}
 
 %-------------------------------------------------------------------------------
 %                Configuration for directory locations
@@ -711,6 +710,8 @@
   \vspace{-4.0mm}
 }
 
+% Define a toggle to set the appropriate version
+\newbool{FullVersion}
 
 %-------------------------------------------------------------------------------
 %                Commands for elements of Cover Letter

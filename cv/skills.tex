@@ -12,44 +12,59 @@
 %---------------------------------------------------------
   \cvskill
     {Programming Languages} % Category
-    {Python, Java, C/C++, C\#, JavaScript, Golang, Dart, Verilog, HTML/CSS, x86/MIPS Assembly Language,\newline MiniZinc, and Haskell} % Skills
+    {Python, Java, C/C++, C\#, JavaScript, Golang, Dart, Verilog, HTML/CSS, x86/MIPS Assembly Language,\newline MiniZinc, Haskell, and GLSL} % Skills
 
-%---------------------------------------------------------
   \cvskill
     {Game Engines} % Category
     {Unity} % Skills
-%---------------------------------------------------------
-  \cvskill
-    {GPU Programming Frameworks} % Category
-    {CUDA and OpenACC} % Skills
-    
-  \cvskill
-    {Graphics Libraries} % Category
-    {OpenGL, GLUT, GLFW, GLSL, and SDL} % Skills
 
-  \cvskill
-    {Database Technologies} % Category
-    {MySQL, Redis, and PostgreSQL} % Skills
+  \ifbool{FullVersion}{
+    \cvskill
+        {GPU Programming Frameworks} % Category
+        {CUDA and OpenACC} % Skills
     
-  \cvskill
-    {Container Orchestration} % Category
-    {Docker} % Skills
+    \cvskill
+        {Graphics Libraries} % Category
+        {OpenGL, GLUT, GLFW, GLEW, and SDL} % Skills
+  }{    
+   \cvskill
+    {Graphics and GPU Libraries} % Category
+    {OpenGL, GLUT, GLFW, GLEW, SDL, and CUDA} % Skills}
+  }
 
-  \cvskill
-    {Data Engineering Tools} % Category
-    {Kafka, Prometheus, and Grafana} % Skills
+
+    \ifbool{FullVersion}{
+      \cvskill
+        {Database Technologies} % Category
+        {MySQL, Redis, and PostgreSQL} % Skills
+    }{}
+
+
+     \ifbool{FullVersion}{
+      \cvskill
+        {Container Orchestration} % Category
+        {Docker} % Skills
+     }{}
+        
+      \ifbool{FullVersion}{
+      \cvskill
+        {Data Engineering Tools} % Category
+        {Kafka, Prometheus, and Grafana} % Skills
+      }{}
 
   \cvskill
     {Web/Application Frameworks} % Category
     {Spring, Django REST, Gin, Flutter, Vue, Vuetify, Qt, Bootstrap, Flask} % Skills
 
+  \ifbool{FullVersion}{
   \cvskill
     {Operating Systems} % Category
     {Windows and Linux-based operating systems} % Skills
+  }{}
 
   \cvskill
     {Mathematical and ML Tools} % Category
-    {MATLAB, Maple, jupyter, NumPy, pandas, and scikit-learn} % Skills
+    {MATLAB, Maple, jupyter, NumPy, pandas, scikit-learn, PyTorch, and Ray Tune} % Skills
 
   \cvskill
     {Project Management} % Category
@@ -57,7 +72,7 @@
 
   \cvskill
     {Miscellaneous} % Category
-    {\LaTeX \space, UML Diagarms, and Adobe XD} % Skills
+    {\LaTeX \space, UML Diagarms\ifbool{FullVersion}{, and Adobe XD}{, Adobe XD, Docker, and SQL}} % Skills
 
   \cvskill
     {Soft Skills} % Category

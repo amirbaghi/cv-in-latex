@@ -1,15 +1,18 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Awards And Honors}
 
 
 %-------------------------------------------------------------------------------
 %	CONTENT
 %-------------------------------------------------------------------------------
-\begin{cventries}
 
-%---------------------------------------------------------
+\ifbool{FullVersion}{
+%-------------------- FULL VERSION -------------------
+  \cvsection{Awards And Honors}
+  
+  \begin{cventries}
+  
   \cventry
     {I.D.E.A Association} % Job title
     {Ranked First, The First Technical Footsteps Competition} % Organisation
@@ -37,5 +40,43 @@
       As the second student in the ranking of my class, I was included in Shiraz University’s Department of Computer Science, Engineering, and Information Technology’s dean’s list, which is a list of academically accomplished students in each class.
     }
 
-\end{cventries}
+    \end{cventries}
+}{
+% ------------- SHORT VERSION --------------
+\cvsection{Awards, Honors, And Certificates}
+
+\begin{cvhonors}
+  \cvhonor
+    {Dean’s List} % Award
+    {Shiraz University} % Event
+    {Shiraz, Iran} % Location
+    {2022} % Date(s)
+    
+  \cvhonor
+    {Ranked Second In My Class} % Award
+    {Shiraz University} % Event
+    {Shiraz, Iran} % Location
+    {2022} % Date(s)
+
+  \cvhonor
+    {TOEFL iBT (120/120)} % Award
+    {ETS} % Event
+    {Tehran, Iran} % Location
+    {2021} % Date(s)
+
+  \cvhonor
+    {Ranked First In The First Technical Footsteps Competition} % Award
+    {I.D.E.A Association} % Event
+    {Shiraz, Iran} % Location
+    {2020} % Date(s)
+
+  \cvhonor
+    {Completion Of A Full Program In English Language} % Award
+    {Iran Language Institute} % Event
+    {Shiraz, Iran} % Location
+    {2019} % Date(s)
+
+\end{cvhonors}
+}
+
 

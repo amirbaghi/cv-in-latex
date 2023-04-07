@@ -11,6 +11,29 @@
 
 %---------------------------------------------------------
 
+
+     \ifbool{FullVersion}{
+       \cventry
+        {Uppsala University - Statistical Machine Learning Course} % Organisation
+        {Various Classifiers and a DL Model For Lead Role Prediction In Films} % Project
+        {\textbf{Uppsala, Sweden}} % Location
+        {\textbf{Spring 2023}} % Date(s)
+        {
+            Five types of classifiers and a neural network were developed with advanced hyper-tuning for prediction of the lead actor's gender based on a script's attributes. Done in Python using PyTorch, RayTune, and scikit-learn.
+        }
+     }{}
+    
+    
+  \cventry
+    {Uppsala University - Computer Graphics Course} % Organisation
+    {Raytracing and Environment and Shadow Mapping For a Model Viewer} % Project
+    {\textbf{Uppsala, Sweden}} % Location
+    {\textbf{Spring 2023}} % Date(s)
+    {
+        Raytracing and environment and shadow mapping were added to an existing GLTF model viewer as the course's project and last assignment. The model viewer provided only a framework, and most of the basics of a renderer were added to it in the previous assignments. Done in C++, OpenGL, and GLSL. 
+    }
+  
+  \ifbool{FullVersion}{
   \cventry
     {Uppsala University - Human Computer Interaction Course} % Organisation
     {A Game Listing App UI} % Project
@@ -19,7 +42,9 @@
     {
         Based on human-computer interaction principles, a user interface was developed for a fictional video game listing app. Developed in Adobe XD.
     }
+  }{}
 
+  \ifbool{FullVersion}{
   \cventry
     {Uppsala University - Combinatorial Optimisation Course} % Organisation
     {Added Constraints, MiniCP Solver} % Project
@@ -28,6 +53,7 @@
     {
         New constraints (e.g. AllDifferent and Disjunctive) were developed for the MiniCP constraint solver in Java.
     }
+  }{}
     
   \cventry
     {Uppsala University - Combinatorial Optimisation Course} % Organisation
@@ -44,9 +70,10 @@
     {\textbf{Uppsala, Sweden}} % Location
     {\textbf{Fall 2022}} % Date(s)
     {
-        The game of Reversi (Othello) and an advanced opponent AI were implemented in Haskell.
+        The game of Reversi (Othello) and an advanced opponent AI were implemented in Haskell. Ranked \emph{3rd} in a tournament against other AIs.
     }
 
+  \ifbool{FullVersion}{
   \cventry
     {Shiraz University - Digital System Design Course} % Organisation
     {The CORDIC Machine} % Project
@@ -55,24 +82,26 @@
     {
       The circular-rotation mode of the CORDIC machine was to be implemented on FPGA. Simulated in Python and written in Verilog.
     }
+    }{}
 
-
-  \cventry
-    {Shiraz University - Systems Analysis and Design Course} % Organisation
-    {Aphrodite, A Covid-19 Detection Application} % Project
-    {\textbf{Shiraz, Iran}} % Location
-    {\textbf{Fall 2021}} % Date(s)
-    {
-      An application was developed upon a pre-trained model (COVIDNet-CT) to accommodate COVID-19 detection for hospitals in Shiraz. A completely dockerized application, including telemetry for the model performance and monitoring. Python, Qt C++, Prometheus, Grafana, Node Exporter, and MySQL were utilized.
-    }
-
+    \ifbool{FullVersion}{
+      \cventry
+        {Shiraz University - Systems Analysis and Design Course} % Organisation
+        {Aphrodite, A Covid-19 Detection Application} % Project
+        {\textbf{Shiraz, Iran}} % Location
+        {\textbf{Fall 2021}} % Date(s)
+        {
+          An application was developed upon a pre-trained model (COVIDNet-CT) to accommodate COVID-19 detection for hospitals in Shiraz. A completely dockerized application, including telemetry for the model performance and monitoring. Python, Qt C++, Prometheus, Grafana, Node Exporter, and MySQL were utilized.
+        }
+    }{}
+    
   \cventry
     {Shiraz University - Databases Design Principles Course} % Organisation
     {Alethia, Mock Linkedin Website} % Project
     {\textbf{Shiraz, Iran}} % Location
     {\textbf{Spring 2021}} % Date(s)
     {
-      As the course project, a website simulating the features and looks of LinkedIn was developed. Vue.js, Gin (Golang), MySQL, Docker, gRPC, cron, Redis, and Nginx were utilized. All services were dockerized and an effective container orchestration was designed. \emph{The project was ranked 2nd in the course}.
+      As the course project, a website simulating the features and looks of LinkedIn was developed. Vue.js, Gin (Golang), MySQL, Docker, gRPC, cron, Redis, and Nginx were utilized. All services were dockerized and an effective container orchestration was designed. \emph{Ranked 2nd in the course}.
     }
 
   \cventry
@@ -84,6 +113,7 @@
       Main concepts in game development/graphics, such as skeletal animation (inverse kinematics), game engine development and design patterns, game physics, the render engine, and game metric analysis were implemented in these projects. All written in C++ using OpenGL/GLFW/GLUT.
     }
 
+  \ifbool{FullVersion}{
   \cventry
     {Shiraz University - Operating Systems Course} % Organisation
     {Simple Unix Bash} % Project
@@ -92,6 +122,7 @@
     {
       As the course project, a simple Unix-like bash was written in C++ to simulate the main functionalities of bash (e.g. executing Unix commands).
     }
+  }{}
 
   \cventry
     {Shiraz University - Computer Graphics I Course} % Organisation
@@ -102,6 +133,7 @@
       As the course project, a program simulating the eight queens problem in 3D graphics was written in C++ using only OpenGL. Advanced lighting and surface materials were implemented and used to improve the graphics.
     }
 
+  \ifbool{FullVersion}{
   \cventry
     {Shiraz University - Technical Presentation Course \emph{(Volunteer Project)}} % Organisation
     {Presentation/Video Sharing Website} % Project
@@ -110,6 +142,7 @@
     {
       Done voluntarily for the Technical Presentation course. Based on the suggestion of the instructor of the course, Dr. Koorush Ziarati, we developed a website where students can share presentations and give feedback on other submissions, including a management panel for the instructor and an online video-streaming option with live comments. Developed using Django and Vue.js.
     }
+    }{}
 
   \cventry
     {I.D.E.A. Footsteps Contest} % Organisation
@@ -117,7 +150,7 @@
     {\textbf{Shiraz, Iran}} % Location
     {\textbf{Summer 2020}} % Date(s)
     {
-      For the I.D.E.A. Footsteps Contest, we were tasked with implementing a tracking system for the university’s bus lines, including a mobile app to provide users with info on the scheduling. Developed with Flutter. \emph{Our team’s submission was ranked 1st in the contest}.
+      For the I.D.E.A. Footsteps Contest, we were tasked with implementing a tracking system for the university’s bus lines, including a mobile app to provide users with info on the scheduling. Developed with Flutter. \emph{Ranked 1st in the contest}.
     }
 
   \cventry
@@ -129,6 +162,7 @@
       A pipelined CPU based on MIPS was implemented in Python (\emph{for Computer Arch. Course, ranked 1st}) and in Verilog (for Computer Arch. Lab Course).
     }
 
+\ifbool{FullVersion}{
   \cventry
     {Shiraz University - Data Structures and Algorithms I Course} % Organisation
     {Steiner Tree Finder} % Project
@@ -137,7 +171,9 @@
     {
       As the course project, an algorithm to find an acceptable Steiner Tree for a graph, in O(N) time complexity, was designed and implemented in Python.
     }
+}{}
 
+  \ifbool{FullVersion}{
   \cventry
     {Shiraz University - Advanced Programming Course} % Organisation
     {Atelier, Workshop Management Website} % Project
@@ -146,6 +182,7 @@
     {
       As the course project, our team implemented a fully functional website, written in Java, to carry out a workshop management system with various features. \emph{The project was ranked 1st}.
     }
+  }{}
 
   \cventry
     {Shiraz University - Principles of Programming Course} % Organisation
@@ -153,9 +190,10 @@
     {\textbf{Shiraz, Iran}} % Location
     {\textbf{Spring 2019}} % Date(s)
     {
-      As the course project, our team implemented a game console to be able to render certain 2D games on PC, written in C. \emph{The project was ranked 2nd in the course}.
+      As the course project, our team implemented a game console to be able to render certain 2D games on PC, written in C. \emph{Ranked 2nd in the course}.
     }
 
+  \ifbool{FullVersion}{
   \cventry
     {Shiraz University - Fundamentals of Computer and Programming Course} % Organisation
     {Blockchain-Based Transaction Management System} % Project
@@ -164,6 +202,7 @@
     {
       As the course project, a system to manage transactions in an unreal currency, based mainly on blockchain technology, was implemented in Python.
     }
+  }{}
 
 %---------------------------------------------------------
 \end{cventries}

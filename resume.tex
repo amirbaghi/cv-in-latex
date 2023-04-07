@@ -27,6 +27,10 @@
 % Set false if you don't want to highlight section with russell color
 \setbool{acvSectionColorHighlight}{true}
 
+% Set the version of the document to compile
+% \booltrue{FullVersion}
+\boolfalse{FullVersion}
+
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
@@ -59,8 +63,10 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra information}
 
+\ifbool{FullVersion}
+{
 \quote{``In the depth of Winter, I finally learned that within me there lay an invincible Summer." \\ - Albert Camus}
-
+}{}
 
 %-------------------------------------------------------------------------------
 \begin{document}
@@ -81,14 +87,14 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{cv/summary.tex}
+\ifbool{FullVersion}{\input{cv/summary.tex}}{}
 \input{cv/education.tex}
 \input{cv/experience.tex}
 \input{cv/academic_experience.tex}
 \input{cv/projects.tex}
-\input{cv/affiliations.tex}
+\ifbool{FullVersion}{\input{cv/affiliations.tex}}{}
 \input{cv/awards_honors.tex}
-\input{cv/certs.tex}
+\ifbool{FullVersion}{\input{cv/certs.tex}}{}
 \input{cv/skills.tex}
 \input{cv/interests.tex}
 \input{cv/languages.tex}
