@@ -11,31 +11,49 @@
 
 %---------------------------------------------------------
 
+       \cventry
+        {Uppsala University - Reinforcement Learning Course} % Organisation
+        {Learning To Play Pong Using DQN} % Project
+        {\textbf{Uppsala, Sweden}} % Location
+        {\textbf{Spring 2023}} % Date(s)
+        {
+            A Deep Q-Network (DQN) was implemented, based on the Nature paper by Mnih et al. (2015), to learn and play the game of Pong (and most Atari games). The network was tested on Breakout successfully as well. Written in PyTorch.
+        }
+        
+       \cventry
+        {Uppsala University - Global Software Product Development Course} % Organisation
+        {Prototype For Semi-Autonomous Agricultural Harvesting Robots} % Project
+        {\textbf{Uppsala, Sweden}} % Location
+        {\textbf{Spring 2023}} % Date(s)
+        {
+            A prototype for semi-autonomous agricultural harvesting robots was developed in an international team consisting of HUST (Hanoi) and UU (Uppsala) students. International collaboration, communication, and project management were the key concepts. Done using Lego EV3 Robots.
+        }
 
-     \ifbool{FullVersion}{
+     % \ifbool{FullVersion}{
        \cventry
         {Uppsala University - Statistical Machine Learning Course} % Organisation
         {Various Classifiers and a DL Model For Lead Role Prediction In Films} % Project
         {\textbf{Uppsala, Sweden}} % Location
         {\textbf{Spring 2023}} % Date(s)
         {
-            Five types of classifiers and a neural network were developed with advanced hyper-tuning for prediction of the lead actor's gender based on a script's attributes. Done in Python using PyTorch, RayTune, and scikit-learn.
+            Five types of classifiers and a neural network were developed with advanced hyper-tuning for prediction of the lead actor's gender based on a script's attributes. Got a \emph{golden star} in the course. Done in Python using PyTorch, RayTune, and scikit-learn.
         }
-     }{}
-    
-    
-  \cventry
+     % }{}
+
+    % \ifbool{FullVersion}{  
+    \cventry
     {Uppsala University - Computer Graphics Course} % Organisation
-    {Raytracing and Environment and Shadow Mapping For a Model Viewer} % Project
+    {Raytracing, Environment, and Shadow Mapping For a Model Viewer} % Project
     {\textbf{Uppsala, Sweden}} % Location
     {\textbf{Spring 2023}} % Date(s)
     {
         Raytracing and environment and shadow mapping were added to an existing GLTF model viewer as the course's project and last assignment. The model viewer provided only a framework, and most of the basics of a renderer were added to it in the previous assignments. Done in C++, OpenGL, and GLSL. 
     }
+    % }{}
   
   \ifbool{FullVersion}{
   \cventry
-    {Uppsala University - Human Computer Interaction Course} % Organisation
+    {Uppsala University - Human-Computer Interaction Course} % Organisation
     {A Game Listing App UI} % Project
     {\textbf{Uppsala, Sweden}} % Location
     {\textbf{Fall 2022}} % Date(s)
@@ -54,7 +72,8 @@
         New constraints (e.g. AllDifferent and Disjunctive) were developed for the MiniCP constraint solver in Java.
     }
   }{}
-    
+
+  \ifbool{FullVersion}{  
   \cventry
     {Uppsala University - Combinatorial Optimisation Course} % Organisation
     {Carcassonne Map Generator} % Project
@@ -63,6 +82,7 @@
     {
         A \emph{proper} map generator for the game of Carcassonne was implemented in a constraint modeling language, namely MiniZinc. Specific constraints and rules were to be followed in the generation.
     }
+    }{}
     
   \cventry
     {Uppsala University - Functional Programming I Course} % Organisation
@@ -84,7 +104,7 @@
     }
     }{}
 
-    \ifbool{FullVersion}{
+    % \ifbool{FullVersion}{
       \cventry
         {Shiraz University - Systems Analysis and Design Course} % Organisation
         {Aphrodite, A Covid-19 Detection Application} % Project
@@ -93,8 +113,9 @@
         {
           An application was developed upon a pre-trained model (COVIDNet-CT) to accommodate COVID-19 detection for hospitals in Shiraz. A completely dockerized application, including telemetry for the model performance and monitoring. Python, Qt C++, Prometheus, Grafana, Node Exporter, and MySQL were utilized.
         }
-    }{}
-    
+    % }{}
+
+\ifbool{FullVersion}{
   \cventry
     {Shiraz University - Databases Design Principles Course} % Organisation
     {Alethia, Mock Linkedin Website} % Project
@@ -103,6 +124,7 @@
     {
       As the course project, a website simulating the features and looks of LinkedIn was developed. Vue.js, Gin (Golang), MySQL, Docker, gRPC, cron, Redis, and Nginx were utilized. All services were dockerized and an effective container orchestration was designed. \emph{Ranked 2nd in the course}.
     }
+}{}
 
   \cventry
     {Shiraz University - Computer Games Design and Computer Graphics I Courses} % Organisation
@@ -153,14 +175,17 @@
       For the I.D.E.A. Footsteps Contest, we were tasked with implementing a tracking system for the university’s bus lines, including a mobile app to provide users with info on the scheduling. Developed with Flutter. \emph{Ranked 1st in the contest}.
     }
 
-  \cventry
-    {Shiraz University - Computer Architecture and Computer Architecture Lab Courses} % Organisation
-    {MIPS-Based CPU} % Project
-    {\textbf{Shiraz, Iran}} % Location
-    {\textbf{Spring 2020 - Fall 2020}} % Date(s)
-    {
-      A pipelined CPU based on MIPS was implemented in Python (\emph{for Computer Arch. Course, ranked 1st}) and in Verilog (for Computer Arch. Lab Course).
-    }
+\ifbool{FullVersion}{  
+    \cventry
+        {Shiraz University - Computer Architecture and Computer Architecture Lab Courses} % Organisation
+        {MIPS-Based CPU} % Project
+        {\textbf{Shiraz, Iran}} % Location
+        {\textbf{Spring 2020 - Fall 2020}} % Date(s)
+        {
+          A pipelined CPU based on MIPS was implemented in Python (\emph{for Computer Arch. Course, ranked 1st}) and in Verilog (for Computer Arch. Lab Course).
+        }
+    }{}
+
 
 \ifbool{FullVersion}{
   \cventry
