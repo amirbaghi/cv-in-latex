@@ -11,23 +11,34 @@
 
 %---------------------------------------------------------
 
+        \cventry
+        {Uppsala University - Independent Research Work and Project in Computer Systems Course} % Organisation
+        {Neural Compression and Novel View Synthesis of High-Resolution Micro-CT Imaging} % Project
+        {\textbf{Uppsala, Sweden}} % Location
+        {\textbf{Winter 2023}} % Date(s)
+        {
+            Implicit neural representations (INRs), like CuNeRF and hash-based methods, were used to compress, reconstruct, and render high-resolution 3D micro-CT scans. Implemented using PyTorch. Under supervision of Jens Sjölund and partly Stefanos Kaxiras in the Project In Computer Systems course.
+        }
+        
        \cventry
         {Uppsala University - Reinforcement Learning Course} % Organisation
         {Learning To Play Pong Using DQN} % Project
         {\textbf{Uppsala, Sweden}} % Location
         {\textbf{Spring 2023}} % Date(s)
         {
-            A Deep Q-Network (DQN) was implemented, based on the Nature paper by Mnih et al. (2015), to learn and play the game of Pong (and most Atari games). The network was tested on Breakout successfully as well. Written in PyTorch.
+            A Deep Q-Network (DQN) was implemented, based on the Nature paper by Mnih et al. (2015), to learn and play the game of Pong (and most Atari games). The network was tested on "Breakout!" successfully as well. Implemented using PyTorch.
         }
-        
-       % \cventry
-       %  {Uppsala University - Global Software Product Development Course} % Organisation
-       %  {Prototype For Semi-Autonomous Agricultural Harvesting Robots} % Project
-       %  {\textbf{Uppsala, Sweden}} % Location
-       %  {\textbf{Spring 2023}} % Date(s)
-       %  {
-       %      Collaborated internationally with students from HUST (Hanoi) and UU (Uppsala) to develop a semi-autonomous agricultural harvesting robot prototype using Lego EV3 Robots, emphasizing teamwork and project management.
-       %  }
+
+       \ifbool{FullVersion}{
+       \cventry
+        {Uppsala University - Global Software Product Development Course} % Organisation
+        {Prototype For Semi-Autonomous Agricultural Harvesting Robots} % Project
+        {\textbf{Uppsala, Sweden}} % Location
+        {\textbf{Spring 2023}} % Date(s)
+        {
+            Collaborated internationally with students from HUST (Hanoi) and UU (Uppsala) to develop a semi-autonomous agricultural harvesting robot prototype using Lego EV3 Robots, emphasizing teamwork and project management.
+        }
+       }
 
      % \ifbool{FullVersion}{
        \cventry
@@ -36,11 +47,11 @@
         {\textbf{Uppsala, Sweden}} % Location
         {\textbf{Spring 2023}} % Date(s)
         {
-            Five types of classifiers and a neural network were developed with advanced hyper-tuning for prediction of the lead actor's gender based on a script's attributes. Got a \emph{golden star} in the course. Done in Python using PyTorch, RayTune, and scikit-learn.
+            Five types of classifiers and a neural network were developed with advanced hyper-tuning for prediction of the lead actor's gender based on a script's attributes. Implemented using PyTorch, RayTune, and scikit-learn. Got a \emph{golden star} in the course.
         }
      % }{}
 
-    % \ifbool{FullVersion}{  
+    \ifbool{FullVersion}{  
     \cventry
     {Uppsala University - Computer Graphics Course} % Organisation
     {Raytracing, Environment, and Shadow Mapping For a Model Viewer} % Project
@@ -49,7 +60,7 @@
     {
         Enhanced an existing GLTF model viewer as the final course project by adding raytracing, environment, and shadow mapping. Developed in C++ with OpenGL and GLSL, building upon earlier assignments that established the renderer's foundations.
     }
-    % }{}
+    }{}
   
   \ifbool{FullVersion}{
   \cventry
@@ -146,6 +157,7 @@
     }
   }{}
 
+ \ifbool{FullVersion}{
   \cventry
     {Shiraz University - Computer Graphics I Course} % Organisation
     {3d Eight Queens} % Project
@@ -154,6 +166,7 @@
     {
       As the course project, a program simulating the eight queens problem in 3D graphics was written in C++ using only OpenGL. Advanced lighting and surface materials were implemented and used to improve the graphics.
     }
+ }
 
   \ifbool{FullVersion}{
   \cventry

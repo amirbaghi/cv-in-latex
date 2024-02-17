@@ -137,9 +137,9 @@
 \setbool{acvSectionColorHighlight}{true}
 
 % russell section color
-\def\@sectioncolor#1#2#3{%
-  \ifbool{acvSectionColorHighlight}{{\color{russell}#1#2#3}}{#1#2#3}%
-}
+\def\@sectioncolor #1{%  
+  \ifbool{acvSectionColorHighlight}{\color{russell} #1}{#1}%  
+}  
 
 
 %-------------------------------------------------------------------------------
