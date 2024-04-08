@@ -17,7 +17,7 @@
         {\textbf{Uppsala, Sweden}} % Location
         {\textbf{Winter 2023}} % Date(s)
         {
-            Implicit neural representations (INRs), like CuNeRF and hash-based methods, were used to compress, reconstruct, and render high-resolution 3D micro-CT scans. Implemented using PyTorch. Under supervision of Jens Sjölund and partly Stefanos Kaxiras in the Project In Computer Systems course.
+            Implicit neural representations (INRs), like CuNeRF and hash-based methods, were used to compress, reconstruct, and render high-resolution 3D micro-CT scans. Implemented using PyTorch and Optuna. Under supervision of Jens Sjölund and partly Stefanos Kaxiras in the Project In Computer Systems course.
         }
         
        \cventry
@@ -126,7 +126,7 @@
         }
     % }{}
 
-\ifbool{FullVersion}{
+    % \ifbool{FullVersion}{
   \cventry
     {Shiraz University - Databases Design Principles Course} % Organisation
     {Alethia, Mock Linkedin Website} % Project
@@ -135,15 +135,15 @@
     {
       As the course project, a website simulating the features and looks of LinkedIn was developed. Vue.js, Gin (Golang), MySQL, Docker, gRPC, cron, Redis, and Nginx were utilized. All services were dockerized and an effective container orchestration was designed. \emph{Ranked 2nd in the course}.
     }
-}{}
+    % }{}
 
   \cventry
     {Shiraz University - Computer Games Design and Computer Graphics I Courses} % Organisation
-    {Various Game Development Mini-Projects} % Project
+    {Game Engine Development Mini-Projects} % Project
     {\textbf{Shiraz, Iran}} % Location
     {\textbf{Fall 2020 - Spring 2021}} % Date(s)
     {
-      Implemented core game development and graphics concepts, including skeletal animation (inverse kinematics), game engine development, design patterns, game physics, rendering engines, and game metric analysis. Developed using C++ with OpenGL/GLFW/GLUT.
+        Implemented game engine components in C++ with OpenGL/GLFW/GLUT, incorporating core game development and graphics concepts such as skeletal animation, game physics, rendering engines, design patterns, and metric analysis.
     }
 
   \ifbool{FullVersion}{
@@ -179,7 +179,8 @@
     }
     }{}
 
-  \cventry
+  \ifbool{FullVersion}{
+    \cventry
     {I.D.E.A. Footsteps Contest} % Organisation
     {Modo, Bus Transportation App} % Project
     {\textbf{Shiraz, Iran}} % Location
@@ -187,8 +188,9 @@
     {
       For the I.D.E.A. Footsteps Contest, we were tasked with implementing a tracking system for the university’s bus lines, including a mobile app to provide users with info on the scheduling. Developed with Flutter. \emph{Ranked 1st in the contest}.
     }
+  }{}
 
-\ifbool{FullVersion}{  
+  \ifbool{FullVersion}{  
     \cventry
         {Shiraz University - Computer Architecture and Computer Architecture Lab Courses} % Organisation
         {MIPS-Based CPU} % Project
@@ -222,6 +224,7 @@
     }
   }{}
 
+  % \ifbool{FullVersion}{
   \cventry
     {Shiraz University - Principles of Programming Course} % Organisation
     {Teatro, Game Console In C} % Project
@@ -230,6 +233,7 @@
     {
       As the course project, our team implemented a game console to be able to render certain 2D games on PC, written in C. \emph{Ranked 2nd in the course}.
     }
+   % }{} 
 
   \ifbool{FullVersion}{
   \cventry
